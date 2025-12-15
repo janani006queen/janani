@@ -1,96 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>KPRCAS Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
 
-        .login-container {
-            background: #ffffff;
-            width: 360px;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
+    input[type="search"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+    }
 
-        .login-container img {
-            width: 120px;
-            margin-bottom: 15px;
-        }
+    button {
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
 
-        .login-container h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .login-container input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 15px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            background: #1e3c72;
-            border: none;
-            color: white;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .login-container button:hover {
-            background: #16315c;
-        }
-
-        .footer-text {
-            margin-top: 15px;
-            font-size: 14px;
-        }
-
-        .footer-text a {
-            color: #1e3c72;
-            text-decoration: none;
-        }
-    </style>
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="login-container">
-        <!-- KPRCAS Official Logo -->
-        <img src="https://kprcas.ac.in/file/wp-content/uploads/2022/01/Logo.png"
-             alt="KPRCAS Logo">
-
-        <h2>KPRCAS Login</h2>
-
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-
-        <div class="footer-text">
-            <a href="#">Forgot Password?</a>
-        </div>
-    </div>
+  <!-- Formspree Form -->
+  <form action="https://formspree.io/f/xbjvabcd" method="POST">
+    <input
+      type="search"
+      name="query"
+      placeholder="Search something..."
+      required
+    >
+    <button type="submit">Submit</button>
+  </form>
 
 </body>
 </html>
-
