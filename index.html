@@ -6,44 +6,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f4f7;
+            background: #eef2f3;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
 
-        .login-container {
+        .login-box {
             background: #ffffff;
-            width: 350px;
+            width: 360px;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
             text-align: center;
         }
 
-        .login-container img {
+        .login-box img {
             width: 160px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .login-container h2 {
+        .login-box h2 {
             margin-bottom: 20px;
             color: #2c3e50;
         }
 
-        .login-container input {
+        .login-box input {
             width: 100%;
             padding: 12px;
             margin: 10px 0;
             border-radius: 5px;
             border: 1px solid #ccc;
+            font-size: 15px;
         }
 
-        .login-container button {
+        .login-box button {
             width: 100%;
             padding: 12px;
-            background-color: #1f4fa3;
+            background: #1f4fa3;
             color: white;
             border: none;
             border-radius: 5px;
@@ -51,11 +52,11 @@
             cursor: pointer;
         }
 
-        .login-container button:hover {
-            background-color: #163b7a;
+        .login-box button:hover {
+            background: #163b7a;
         }
 
-        .footer-text {
+        .footer {
             margin-top: 15px;
             font-size: 13px;
             color: #666;
@@ -64,10 +65,10 @@
 </head>
 <body>
 
-<div class="login-container">
+<div class="login-box">
 
-    <!-- KPRCAS Logo -->
-    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBAVEBAVEBAVEBAVEBAVEBAVFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAWgB4AMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EAD4QAAIBAgQDBQYEBQUAAAAAAAECAwQRAAUSITFBUWEGEyJxgZGhFCNCUrHB0RQjYnLh8BVDkqL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAkEQEAAgICAgIDAQAAAAAAAAAAAQIDEQQSITFBURNhBRIjQv/aAAwDAQACEQMRAD8A8wREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA//Z"
+    <!-- KPRCAS Logo (Embedded) -->
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBAVEBAVEBAVEBAVEBAVEBAVFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAWgB4AMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQCB//EAD4QAAIBAgQDBQYEBQUAAAAAAAECAwQRAAUSITFBUWEGEyJxgZGhFCNCUrHB0RQjYnLh8BVDkqL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAgMEAQX/xAAkEQEAAgICAgIDAQAAAAAAAAAAAQIDEQQSITFBURNhBRIjQv/aAAwDAQACEQMRAD8A8wREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA//Z" 
          alt="KPRCAS Logo">
 
     <h2>Login</h2>
@@ -78,7 +79,7 @@
         <button type="submit">Login</button>
     </form>
 
-    <div class="footer-text">
+    <div class="footer">
         KPRCAS – Learn Beyond
     </div>
 
