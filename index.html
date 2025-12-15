@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Search Box</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Search Box</title>
   <style>
     body {
       margin: 0;
@@ -12,41 +11,42 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #f5f5f5;
+      background-color: #f5f5f5;
       font-family: Arial, sans-serif;
     }
 
-    .search-container {
-      background: #ffffff;
-      padding: 15px;
-      border-radius: 50px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    .search-form {
       display: flex;
       align-items: center;
+      background-color: #fff;
+      padding: 12px 15px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       width: 350px;
     }
 
-    .search-container input[type="search"] {
-      border: none;
-      outline: none;
+    .search-form input[type="text"] {
       flex: 1;
-      font-size: 16px;
       padding: 10px 15px;
+      border: none;
       border-radius: 50px;
+      font-size: 16px;
+      outline: none;
     }
 
-    .search-container button {
-      border: none;
-      background: #007bff;
-      color: white;
+    .search-form button {
       padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
       border-radius: 50px;
+      background-color: #007bff;
+      color: #fff;
       cursor: pointer;
       font-size: 14px;
     }
 
-    .search-container button:hover {
-      background: #0056b3;
+    .search-form button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -54,14 +54,14 @@
 
   <!-- Search Form -->
   <form 
-    class="search-container"
-    action="https://formspree.io/f/xgvgbeop"
+    class="search-form" 
+    action="https://getform.io/f/aejvjxzb" 
     method="POST"
   >
-    <input
-      type="search"
-      name="search_query"
-      placeholder="Search here..."
+    <input 
+      type="text" 
+      name="search_query" 
+      placeholder="Type your search..." 
       required
     >
     <button type="submit">Search</button>
